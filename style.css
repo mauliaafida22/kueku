@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f7;
+}
+
+header {
+    background-color: #fff5f7;
+    color: #0f0e0e;
+    padding: 10px;
+    text-align: center;
+}
+
+header img{
+    height: 80px;
+}
+
+nav {
+    background-color: #f9aabb;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 25px;
+}
+
+nav a:hover{
+    background-color: #fc7491;
+    transition: 0.5s;
+}
+
+.cover {
+    background-image: url('img/banner2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 180px; /* Sesuaikan nilai padding untuk memperbesar cover */
+}
+
+.sub-title {
+    font-size: 17px;
+    color: #0f0e0e;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 100px; /* Mengurangi padding pada container produk */
+}
+
+.product-item {
+    width: 240px; /* Atur lebar setiap item produk */
+    margin-top: 20px; /* Mengurangi margin antara produk */
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Tampilkan elemen secara vertikal */
+    align-items: center;
+    border: 1px solid #ddd; /* Tambahkan border untuk memisahkan item */
+    border-radius: 8px; /* Tambahkan border-radius untuk sudut yang lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    transition: transform 0.3s ease-in-out; /* Efek transisi ketika hover */
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+}
+
+.price {
+    margin-right: 10px; /* Jarak antara harga dan tombol beli */
+}
+
+.buy-button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.product-item:hover {
+    transform: scale(1.05); /* Memperbesar item ketika dihover */
+}
+
+.product-item img {
+    width: 100%; /* Gambar akan mengambil lebar maksimum dari parent */
+    height: 150px; /* Atur tinggi gambar */
+    object-fit: cover; /* Menjaga proporsi aspek gambar tetap terjaga */
+    border-top-left-radius: 8px; /* Tambahkan border-radius untuk sudut gambar */
+    border-top-right-radius: 8px; /* Tambahkan border-radius untuk sudut gambar */
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px; /* Jarak antara gambar dan harga */
+}
+
+.buy-button {
+    background-color: #1cec00;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; /* Jarak antara harga dan tombol beli */
+}
+
+.buy-button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
